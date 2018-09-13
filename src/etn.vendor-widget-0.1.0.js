@@ -49,10 +49,10 @@ document.addEventListener("DOMContentLoaded", function() {
         // Create the QR code
         var qr = document.createElement("img");
         qr.src = "https://chart.googleapis.com/chart?cht=qr&chs=300x300&chld=L|0&chl=" + encodeURI('https://link.electroneum.com/jWEpM5HcxP?vendor=' + code);
-        qr.style.boxSizing = "content-box";
+        qr.style.boxSizing = "border-box";
         qr.style.border = "8px solid #FFFFFF";
         qr.style.marginBottom = "10px";
-        qr.style.width = "155px";
+        qr.style.width = "100%";
 
         // Create the label image
         var labelImage = document.createElement("img");
