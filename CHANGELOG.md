@@ -3,6 +3,8 @@
 All released changes will be documented in this file.
 
 ## [Unreleased]
+
+## [0.1.1] - 2018-09-14
 * Fixed QR image width when used with Bootstrap
 * Replaced var declarations with ES6 let or const
 * Remove version number from asset filenames
