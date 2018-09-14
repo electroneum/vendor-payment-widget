@@ -52,7 +52,7 @@ Unpack the minified javascript file from `src/` and include it in your
 HTML. For example:
 
 ```html
-<script src="js/etn.vendor-widget-0.1.0.min.js"></script>
+<script src="src/etn.vendor-widget.min.js"></script>
 ```
 
 ## Quick Use
