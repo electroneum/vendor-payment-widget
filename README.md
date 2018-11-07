@@ -28,7 +28,7 @@ Community support is available at
 
 Further documentation on data structures (useful to create your own
 integration or to create the QR code yourself) and our Vendor API can
-be found at [https://community.electroneum.com/t/using-the-etn-instant-payment-api/121](https://community.electroneum.com/t/using-the-etn-instant-payment-api/121).
+be found at [community.electroneum.com/t/using-the-etn-instant-payment-api/121](https://community.electroneum.com/t/using-the-etn-instant-payment-api/121).
 
 ## Requirements
 
@@ -55,7 +55,7 @@ HTML. For example:
 <script src="src/etn.vendor-widget.min.js"></script>
 ```
 
-## Quick Use
+## How To Use
 
 Once you have your payment string (see the documentation link above),
 you simply include this in a `data-etn-vendor` attribute of a `div`. For
@@ -64,6 +64,36 @@ example:
 ```html
 <div data-etn-vendor="etn-it-0abc123def456/7ce25b4dc0/1234.56"></div>
 ```
+
+The default rendering language is English. You can provide a second
+attribute of `data-lang` to specify one of the supported language codes
+below. For example:
+
+```html
+<div data-etn-vendor="etn-it-0abc123def456/7ce25b4dc0/1234.56" data-lang="br-pt"></div>
+```
+
+Supported languages are restricted to the following:
+
+| Language             | Code  |
+|----------------------|-------|
+| English (default)    | en    |
+| Brazilian Portuguese | pt-br |
+| Chinese              | zh    |
+| Dutch                | nl    |
+| French               | fr    |
+| Hindi                | hi    |
+| Indonesian           | id    |
+| Italian              | it    |
+| Japanese             | jp    |
+| Korean               | ko    |
+| Portugese            | pt    |
+| Romanian             | ro    |
+| Russian              | ru    |
+| Spanish              | es    |
+| Thai                 | th    |
+| Turkish              | tr    |
+| Urdu                 | ur    |
 
 On page load, the Javascript file will replace this div with a scannable
 and clicking QR code.
