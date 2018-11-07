@@ -1,7 +1,24 @@
 document.addEventListener("DOMContentLoaded", function() {
     // Array of translation texts
     const langs = {
-        en: "Scan with the app or click to pay"
+        'de': "Scannen Sie mit der App oder klicken Sie um zu bezahlen",
+        'en': "Scan with the app or click to pay",
+        'es': "Escanea con la App o haz click para pagar",
+        'fr': "Scannez avec l'application ou cliquez pour payer",
+        'hi': "एप से स्कैन करें या भुगतान के लिए क्लिक करेंं",
+        'id': "Pindai dengan aplikasi atau klik untuk bayar",
+        'it': "Scannerizza tramite l'app o clicca per pagare",
+        'jp': "支払うにはアプリでスキャンするか、クリックしてください",
+        'ko': "지불하기 위해 앱으로 스캔하거나 클릭하기",
+        'nl': "Scan met de app of klik om te betalen",
+        'pt': "Leia com a app ou clique para pagar",
+        'pt-br': "Escaneie com o aplicativo ou clique para pagar",
+        'ro': "Scanează cu aplicația sau apasă pentru a plăti",
+        'ru': "Отсканируйте через приложение или нажмите, чтобы оплатить",
+        'th': "สแกนกับแอป หรือคลิกเพื่อชำระ",
+        'tr': "Ödeme için uygulama ile taratın veya tıklayın",
+        'ur': "ایپ کے ذریعے سکین کریں یا ادائیگی کرنے کیلئے کلک کریں",
+        'zh': "使用应用扫描付款，或点击付款"
     };
 
     // Select each ETN Vendor element
