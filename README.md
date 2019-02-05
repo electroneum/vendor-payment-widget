@@ -87,7 +87,7 @@ Supported languages are restricted to the following:
 | Italian              | it    |
 | Japanese             | jp    |
 | Korean               | ko    |
-| Portugese            | pt    |
+| Portuguese           | pt    |
 | Romanian             | ro    |
 | Russian              | ru    |
 | Spanish              | es    |
