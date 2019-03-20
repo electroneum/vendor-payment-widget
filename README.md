@@ -19,6 +19,23 @@ is converted to ETN at a regular interval based on market data. Please
 do not try to present a QR code to users above this limit as the
 transaction will fail.
 
+## [Unreleased]
+
+### 2019-03-20
+* Replaced Google Chart with QR Server to generate QR images
+* Fixed spelling mistake of "Portuguese" in README
+
+### 2018-11-07
+* Added language support
+
+### 2018-09-14
+* Fixed QR image width when used with Bootstrap
+* Replaced var declarations with ES6 let or const
+* Remove version number from asset filenames
+
+### 2018-09-07
+* First beta release of the Electroneum Vendor Payment Widget
+
 ## Support
 
 Community support is available at
