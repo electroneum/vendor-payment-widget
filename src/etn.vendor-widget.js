@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         // Create the QR code
         let qr = document.createElement("img");
-        qr.src = "https://chart.googleapis.com/chart?cht=qr&chs=300x300&chld=L|0&chl=" + encodeURI('https://link.electroneum.com/jWEpM5HcxP?vendor=' + code);
+        qr.src = "https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=" + encodeURI('https://link.electroneum.com/jWEpM5HcxP?vendor=' + code);
         qr.style.boxSizing = "border-box";
         qr.style.border = "8px solid #FFFFFF";
         qr.style.marginBottom = "10px";
