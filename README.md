@@ -14,12 +14,15 @@ This project is currently in BETA phase. During this phase, we accept no
 responsibility for any false notifications nor affirm the identity of
 any vendors.
 
-There is a maximum spend limit of €50.00 per transaction; this figure
+There is a maximum spend limit of €500.00 per transaction; this figure
 is converted to ETN at a regular interval based on market data. Please
 do not try to present a QR code to users above this limit as the
 transaction will fail.
 
-## [Unreleased]
+## Changelog
+
+### 2019-07-17
+* Replaced QR Server with local JS library to generate QR images
 
 ### 2019-03-20
 * Replaced Google Chart with QR Server to generate QR images
@@ -65,10 +68,11 @@ You can download the latest version of this project from
 
 ## Installation
 
-Unpack the minified javascript file from `src/` and include it in your
+Unpack the minified javascript files from `src/` and include it in your
 HTML. For example:
 
 ```html
+<script src="src/qrcode.min.js"></script>
 <script src="src/etn.vendor-widget.min.js"></script>
 ```
 

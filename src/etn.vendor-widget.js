@@ -64,12 +64,14 @@ document.addEventListener("DOMContentLoaded", function() {
         content.style.borderRadius = "4px";
 
         // Create the QR code
-        let qr = document.createElement("img");
-        qr.src = "https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=" + encodeURI('https://link.electroneum.com/jWEpM5HcxP?vendor=' + code);
-        qr.style.boxSizing = "border-box";
-        qr.style.border = "8px solid #FFFFFF";
-        qr.style.marginBottom = "10px";
-        qr.style.width = "100%";
+        var qrCode = new QRCode(content, {
+            correctLevel : QRCode.CorrectLevel.L
+        });
+        qrCode.makeCode('https://link.electroneum.com/jWEpM5HcxP?vendor=' + code);
+        content.children[1].style.width = '100%';
+        content.children[1].style.boxSizing = 'border-box';
+        content.children[1].style.border = '8px solid #FFFFFF';
+        content.children[1].style.marginBottom = '10px';
 
         // Create the label image
         let labelImage = document.createElement("img");
@@ -89,7 +91,6 @@ document.addEventListener("DOMContentLoaded", function() {
         labelButton.style.marginTop = "15px";
 
         // Append the new elements to the DOM
-        content.appendChild(qr);
         content.appendChild(labelImage);
         container.appendChild(content);
         container.appendChild(labelButton);
