@@ -14,12 +14,15 @@ This project is currently in BETA phase. During this phase, we accept no
 responsibility for any false notifications nor affirm the identity of
 any vendors.
 
-There is a maximum spend limit of €50.00 per transaction; this figure
+There is a maximum spend limit of €500.00 per transaction; this figure
 is converted to ETN at a regular interval based on market data. Please
 do not try to present a QR code to users above this limit as the
 transaction will fail.
 
-## [Unreleased]
+## Changelog
+
+### 2019-07-17
+* Replaced QR Server with local JS library to generate QR images
 
 ### 2019-03-20
 * Replaced Google Chart with QR Server to generate QR images
