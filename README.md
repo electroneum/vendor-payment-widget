@@ -68,10 +68,11 @@ You can download the latest version of this project from
 
 ## Installation
 
-Unpack the minified javascript file from `src/` and include it in your
+Unpack the minified javascript files from `src/` and include it in your
 HTML. For example:
 
 ```html
+<script src="src/qrcode.min.js"></script>
 <script src="src/etn.vendor-widget.min.js"></script>
 ```
 
