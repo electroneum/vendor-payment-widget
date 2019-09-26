@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
         'id': "Pindai dengan aplikasi atau klik untuk bayar",
         'it': "Scannerizza tramite l'app o clicca per pagare",
         'jp': "支払うにはアプリでスキャンするか、クリックしてください",
+        'kh': "ស្កេនដោយប្រើកម្មវិធី ឬចុចដើម្បីទូទាត់",
         'ko': "지불하기 위해 앱으로 스캔하거나 클릭하기",
         'nl': "Scan met de app of klik om te betalen",
         'pt': "Leia com a app ou clique para pagar",
@@ -18,6 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
         'th': "สแกนกับแอป หรือคลิกเพื่อชำระ",
         'tr': "Ödeme için uygulama ile taratın veya tıklayın",
         'ur': "ایپ کے ذریعے سکین کریں یا ادائیگی کرنے کیلئے کلک کریں",
+        'vn': "Quét bằng ứng dụng hoặc nhấn vào thanh toán",
         'zh': "使用应用扫描付款，或点击付款"
     };
 
@@ -26,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
     for (let i = 0; i < els.length; ++i) {
         // Extract the vendor configuration strings
         let code = els[i].getAttribute("data-etn-vendor");
-        let lang = els[i].getAttribute("data-etn-lang");
+        let lang = 'fr';
         let text = '';
         if (typeof(lang) === 'undefined' || lang === null) {
             lang = 'en';
@@ -37,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function() {
         } else {
             text = langs[lang];
         }
-
+        console.log(lang)
         // Create the container
         let container = document.createElement("div");
         container.classList.add("etn-payment");
