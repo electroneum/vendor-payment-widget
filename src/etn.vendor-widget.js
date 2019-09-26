@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
     for (let i = 0; i < els.length; ++i) {
         // Extract the vendor configuration strings
         let code = els[i].getAttribute("data-etn-vendor");
-        let lang = 'fr';
+        let lang = els[i].getAttribute("data-etn-lang");
         let text = '';
         if (typeof(lang) === 'undefined' || lang === null) {
             lang = 'en';
@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function() {
         } else {
             text = langs[lang];
         }
-        console.log(lang)
+
         // Create the container
         let container = document.createElement("div");
         container.classList.add("etn-payment");
